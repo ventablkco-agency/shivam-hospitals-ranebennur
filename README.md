@@ -25,7 +25,7 @@ Directory listings are leads, not client-approved facts. The hospital must appro
 
 The `building` branch contains an Astro homepage hero with a three-stage, seeded pixel reveal: light architectural linework → illustrative 2.5D facade → the supplied hospital photograph. The hero intentionally has no navigation. The final layer uses the real supplied photo; the first two are illustrative generated references, not documentary images.
 
-The compact image sources are tracked in `assets-source/hero/*.b64`. The `predev` and `prebuild` scripts decode them into `public/images/hero/`.
+The first two stages are native SVGs built from one shared 960 × 540 facade coordinate system, so their geometry is registered exactly. The final original hospital photograph is stored as a compact base64 source in `assets-source/hero/`; the `predev` and `prebuild` scripts decode it into `public/images/hero/`.
 
 ## Run locally
 
