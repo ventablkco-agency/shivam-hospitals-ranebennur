@@ -26,3 +26,6 @@ Thumbs.db
 coverage/
 playwright-report/
 test-results/
+
+# Decoded hero binaries; compact source files are tracked in assets-source/
+public/images/hero/*.webp
