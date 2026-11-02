@@ -24,6 +24,6 @@ npm install
 npm run dev
 ```
 
-To run the dependency-free static preview instead, run `python -m http.server 4173` from the repository root and open `http://localhost:4173/preview.html`. This preview uses the aligned SVG stages and the decoded original-photo WebP.
+The `predev` hook decodes the final photo asset automatically before Astro starts; the `prebuild` hook does the same before production builds.
 
 Build check: `npm run build`.
