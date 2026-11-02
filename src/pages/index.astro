@@ -27,7 +27,7 @@ const description = 'A more personal approach to care for patients and families 
         </div>
         <div class="hero__visual" id="hero-visual">
           <div class="hero__wash" aria-hidden="true"></div>
-          <img class="hero__fallback" src="/images/hero/layer-03-hospital-photo.webp" alt="Front exterior of Shivam Hospitals in Ranebennur" fetchpriority="high" width="960" height="540" />
+          <img class="hero__fallback" src="/images/hero/layer-03-hospital-photo.webp" alt="Front exterior of Shivam Hospitals in Ranebennur" fetchpriority="high" width="600" height="338" />
           <canvas class="hero__canvas" aria-hidden="true"></canvas>
           <div class="hero__caption" aria-hidden="true"><i></i> SHIVAM HOSPITALS <span>RANEBENNUR · INDIA</span></div>
           <div class="hero__progress" aria-hidden="true"><span></span></div>
@@ -41,7 +41,7 @@ const description = 'A more personal approach to care for patients and families 
       const fallback = document.querySelector('.hero__fallback');
       const progress = document.querySelector('.hero__progress span');
       const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-      const paths = ['/images/hero/layer-01-outline.webp','/images/hero/layer-02-depth.webp','/images/hero/layer-03-hospital-photo.webp'];
+      const paths = ['/images/hero/layer-01-outline.svg','/images/hero/layer-02-depth.svg','/images/hero/layer-03-hospital-photo.webp'];
       let images = [], raf = 0, complete = false;
 
       function shuffled(count) {
